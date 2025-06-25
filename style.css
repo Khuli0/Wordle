@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: #1c1c1c;
+    color: white; /*cor da letra */
+    font-family: fantasy; /*botar fonte */
+    display: flex;  
+    flex-direction: column; /*muda a direção dos itens: */
+    align-items: center; /* alinha os itens verticalmente */
+    justify-content: center; /*linha os itens horizontalmente  */
+    min-height: 100vh;
+  }
+
+  .titulo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; /* Aqui você controla o espaço entre as linhas */
+    align-items: center;
+  }
+
+  .terminal-grid {
+    display: flex;
+    gap: 0.3rem; /* Espaço entre os quadradinhos (horizontal) */
+    margin: 0; /* Garante que não tem margem extra entre linhas */
+    padding: 0;
+     }
+
+  .char-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #695e56;
+    color: white;
+    text-transform: uppercase;
+    font-family: fantasy;
+    margin-bottom: 0rem;
+    caret-color: transparent;
+  }
+
+  .teclado {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .linha {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .teclado button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #695e56;
+    color: white ;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .teclado button:hover {
+    background-color: #555;}
