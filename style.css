@@ -70,3 +70,39 @@ body {
 
   .teclado button:hover {
     background-color: #555;}
+
+  .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  }
+
+  .icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  }
+
+  .icon img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+  }
+
+  .icon img.hover {
+  opacity: 0;
+  }
+
+  .icon:hover img.hover {
+  opacity: 1;
+  }
+
+  .icon:hover img.default {
+  opacity: 0;
+  }
