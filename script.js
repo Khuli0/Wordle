@@ -97,3 +97,20 @@ document.querySelectorAll('.teclado button').forEach(btn => {
     }
   });
 });
+
+
+// Funçao modal 
+
+const modal = document.getElementById("modal");
+const abrirBtn = document.getElementById("abrirModal");
+
+abrirBtn.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+

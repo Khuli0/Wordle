@@ -81,8 +81,8 @@ body {
 
   .icon {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
   }
 
@@ -106,3 +106,56 @@ body {
   .icon:hover img.default {
   opacity: 0;
   }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Conteúdo da modal */
+.modal-conteudo {
+  background-color: #2b2622;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.topo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.topo h1 {
+  font-size: 48px;
+  color: white;
+  margin: 0;
+}
+
+/* Botão "i" fixo no topo direito da tela */
+#abrirModal {
+  position: relative;
+  top: -45px;
+  left: 180px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#abrirModal img {
+  display: block;
+}
